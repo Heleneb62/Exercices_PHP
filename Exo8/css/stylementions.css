@@ -1,0 +1,90 @@
+/***********************************FONTS**************************************/
+@font-face {
+	font-family: "Good night";
+	src: url('../fonts/Good-night.ttf') format('truetype');
+}
+
+/***********************************BODY***************************************/
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  background-image: url("../img/patternMosa6.jpg");
+}
+/********************************BARRE NAVIGATION******************************/
+.nav1 {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(235, 111, 211, 0.41);
+  top: 0;
+}
+/*icône navigation*/
+.logo {
+  float: left;
+  width: auto;
+  height: 100px;
+}
+/*menu*/
+.navig, .a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "Good night", sans-serif;
+  color: black;
+  text-transform: capitalize;
+}
+/*au survol du menu*/
+.a:hover {
+	color: red;
+	font-size: 106%;
+}
+/****************************MENTIONS LEGALES***********************************/
+section {
+  margin-top: 120px;
+  margin-left: 12%;
+  margin-right: 12%;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+/********************************FOOTER*****************************************/
+footer {
+  overflow: hidden;
+  height: 100px;
+  width: 100%;
+  background: rgb(245, 240, 240);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*copyright*/
+.nav2 {
+  font-weight: bolder;
+}
+.a2 {
+  height: 100px;
+}
+/*mentions légales*/
+.mention {
+  color: blue;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+/* au survol de mentions légales*/
+.mention:hover {
+	font-size: 106%;
+	color: red;
+}
+/*icones réseaux sociaux*/
+.nav3 {
+  font-weight: bolder;
+}

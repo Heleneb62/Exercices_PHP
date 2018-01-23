@@ -1,0 +1,408 @@
+/***********************************FONTS**************************************/
+@font-face {
+	font-family: "Good night";
+	src: url('../fonts/Good-night.ttf') format('truetype');
+}
+@font-face {
+  font-family: "bkobiii";
+  src:url('../fonts/bkobiii.ttf') format('truetype');
+}
+/***********************************BODY***************************************/
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  font-family: 'Noto Sans', sans-serif;
+}
+/********************************BARRE NAVIGATION******************************/
+.nav1 {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(235, 111, 211, 0.41);
+  top: 0;
+}
+/*icône navigation*/
+.logo {
+  float: left;
+  width: auto;
+  height: 100px;
+}
+/*menu*/
+.navig, .a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "Good night", sans-serif;
+  color: black;
+  text-transform: capitalize;
+}
+/*au survol du menu*/
+.a:hover {
+	color: red;
+	font-size: 106%;
+}
+/*******************************SECTION 1*************************************/
+#Home {
+  height: 600px;
+  width: 100%;
+  background-image: url("../img/flower17.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: flex-end;
+  overflow: auto;
+}
+/*article 1*/
+.article1 {
+  width: 35%;
+  height: 45%;
+  margin-left: 35px;
+  margin-bottom: 35px;
+  padding-left: 4%;
+  padding-right: 4%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(235, 111, 211, 0.41);
+}
+/*titre de l'article 1*/
+.titre1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bolder;
+  font-family: "bkobiii", sans-serif;
+}
+/*paragraphe de l'article 1*/
+.paragraphe1 {
+  text-align: justify;
+  text-align-last: left;
+  font-style: oblique;
+  margin: 8% 0 8%;
+}
+/*bouton de l'article 1*/
+.bouton {
+  display: inline-block;
+  background-color: rgba(233, 219, 219, 0.64);
+  color: black;
+  box-shadow: 2px 2px 2px black;
+  font-weight: bolder;
+  padding: 5px 7px;
+  text-decoration: none;
+  text-align: center;
+  width: 30%;
+  font-family: "bkobiii", sans-serif;
+}
+/* animation pour le bouton article 1*/
+@-webkit-keyframes animbouton {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(80px);
+    }
+}
+@keyframes masuperanimation {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(80px);
+    }
+}
+/* au survol du bouton article 1*/
+.bouton:hover
+{
+    -webkit-animation: animbouton 1s;
+    animation: animbouton 1s;
+    color: red;
+    background-color: rgba(244, 153, 255, 1);
+}
+/******************************SECTION 2**************************************/
+#Product {
+  height: 600px;
+  width: 100%;
+  background:linear-gradient(0deg, white, rgba(199, 215, 142, 0.60) 50%, rgba(171, 187, 112, 0.60));
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: auto;
+}
+/*titre section 2*/
+.titre2 {
+  height: 25%;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "bkobiii", sans-serif;
+}
+.titre2 h2 {
+  margin-right: 35px;
+}
+/*div incluant les cadres images*/
+.cards {
+  height: 50%;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: visible;
+  flex-wrap: wrap;
+}
+/*divs des cadres images*/
+.card {
+  width: 20%;
+  height: 98%;
+  background-color: white;
+  box-shadow: 2px 2px 2px grey;
+  transition: transform 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: ease 0.3s;
+}
+/*survol pour les cadres images*/
+.card:hover {
+  width: 25%;
+  height: 103%;
+	background-color: rgba(235, 111, 211, 0.41);
+}
+/*divs pour l'intérieur des cadres images*/
+.cardimg {
+  width: 96%;
+  height: 75%;
+  overflow: hidden;
+  margin-top: 2%;
+}
+/*paramètres images dans les cadres images*/
+.cardimg img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/*descriptions et prix dans les cadres images*/
+.cardinfo {
+  height: 25%;
+  width: 96%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2%;
+}
+.h3 {
+	  font-family: "bkobiii", sans-serif;
+}
+.prix {
+  margin-left: 19%;
+  border: 2px outset grey;
+  box-shadow: 2px 2px 2px grey;
+  background-color: rgba(226, 161, 173, 0.90);
+  color: black;
+  font-weight: bolder;
+  padding: 2%;
+  transition: ease 0.3s;
+	font-family: 'Open Sans', sans-serif;
+}
+/*lors du survol du prix*/
+.prix:hover {
+	background-color: white;
+}
+/******************************SECTION 3**************************************/
+#store {
+  height: 600px;
+  width: 100%;
+  background-image: url("../img/flower19.png");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+ /*article 2*/
+ .article2 {
+   width: 40%;
+   height: 50%;
+   background-color: rgba(242, 242, 242, 0.42);
+   overflow: auto;
+   margin-right: 2%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 35px;
+   margin-right: 35px;
+ }
+ /*titre article 2*/
+ .titreh2 {
+   font-weight: bolder;
+   margin-top: 2%;
+   margin-bottom:0;
+   font-family: "bkobiii", sans-serif;
+ }
+ /*paragraphe 2*/
+ .paragraphe2 {
+   text-align: justify;
+   text-align-last: right;
+   width: 70%;
+   max-height: 50%;
+   font-style: italic;
+   font-weight: bolder;
+ }
+ /*Mailto*/
+.mail {
+  font-weight: bolder;
+  color: black;
+	transition: ease 0.3s;
+}
+/*lors du survol du mailto*/
+.mail:hover {
+font-size: 106%;
+color: red;
+}
+/*Paramètres icônes réseaux sociaux*/
+.liens {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2%;
+}
+/*images icônes réseaux sociaux*/
+.article2 img {
+  margin-left: 8%;
+  margin-right: 8%;
+  height: 40px;
+  width: 40px;
+	transition: ease 0.3s;
+}
+/* au survol des icônes réseaux sociaux*/
+.article2 img:hover {
+	height: 50px;
+	width: 50px;
+}
+/******************************SECTION 4**************************************/
+#contact {
+  height: 600px;
+  width: 100%;
+  background-image: url("../img/flower3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Le formulaire*/
+.formulaire {
+  width: 55%;
+  height: 70%;
+  background-color: rgba(251, 181, 247, 0.50);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/*divs des lignes du formulaire*/
+.ligne1 {
+  width: 100%;
+  height: 6.3%;
+  text-align: center;
+}
+.ligne2 {
+  width: 100%;
+  text-align: center;
+  height: 6.3%;
+}
+.text {
+  width: 100%;
+  text-align: center;
+  height: 43%;
+}
+.submit {
+  height: 8%;
+  width: 91%;
+}
+/*paramètres des input + textarea du formulaire*/
+#nom {
+  width: 90%;
+  height: 100%;
+  border-radius: 0;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: initial;
+}
+#email {
+  width: 90%;
+  height: 100%;
+  border-radius: 0;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: initial;
+}
+#message {
+  height: 100%;
+  width: 90%;
+  border-radius: 0;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: initial;
+}
+#envoyer {
+  border-radius: 0;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: initial;
+  color: grey;
+  float:right;
+  height: 100%;
+  background-color: white;
+}
+/* au survol du bouton envoyer*/
+#envoyer:hover {
+	color: red;
+	font-size: 106%;
+	font-weight: bolder;
+}
+/*******************************FOOTER****************************************/
+footer {
+  overflow: hidden;
+  height: 100px;
+  width: 100%;
+  background: rgb(245, 240, 240);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*copyright*/
+.nav2 {
+  font-weight: bolder;
+}
+.a2 {
+  height: 100px;
+}
+/*mentions légales*/
+.mention {
+  color: blue;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+/* au survol de mentions légales*/
+.mention:hover {
+	font-size: 106%;
+	color: red;
+}
+/*icones réseaux sociaux*/
+.nav3 {
+  font-weight: bolder;
+}
