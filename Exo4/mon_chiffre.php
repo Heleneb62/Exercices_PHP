@@ -8,10 +8,10 @@
     <?php
     $resultat = 1;
     $nombre = 1;
-    // $mon_chiffre = 8;
-    if ((isset($_POST['mon_chiffre']) && trim($_POST['mon_chiffre']) != "") AND !ctype_alpha($_POST['mon_chiffre']) AND is_numeric($_POST['mon_chiffre']) AND (is_int($_POST['mon_chiffre']) OR $_POST['mon_chiffre'] == 0) ) {
-    echo 'Calcul de la factorielle de ' . $_POST['mon_chiffre'] . '<br><br>';
-    while ($nombre <= $_POST['mon_chiffre']) {
+    if ((isset($_POST['mon_chiffre']) && trim($_POST['mon_chiffre']) != "") AND is_numeric($_POST['mon_chiffre']) OR $_POST['mon_chiffre'] === 0 ) {
+    $mon_chiffre2 = (int) $_POST['mon_chiffre'];
+    echo 'Calcul de la factorielle de ' . $mon_chiffre2 . '<br><br>';
+    while ($nombre <= $mon_chiffre2) {
       echo $nombre . ' * ' . $resultat . ' = ' ;
       $resultat = $resultat * $nombre;
       echo $resultat . '<br>';
