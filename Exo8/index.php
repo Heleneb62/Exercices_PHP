@@ -9,10 +9,10 @@
   </head>
   <body>
     <?php include('header.php'); ?>
-    <?php include('Section1.php') ?>
-    <?php include('Section2.php') ?>
-    <?php include('Section3.php') ?>
-    <?php include('Section4.php') ?>
-    <?php include('footer.php') ?>
+    <?php include('Section1.php'); ?>
+    <?php include('Section2.php'); ?>
+    <?php include('Section3.php'); ?>
+    <?php include('Section4.php'); ?>
+    <?php include('footer.php'); ?>
   </body>
 </html>
