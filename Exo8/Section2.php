@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Section2</title>
-  </head>
-  <body>
+
     <section id="Product">
       <div class="titre2">
         <h2 class="titre2enfant">Nous vous proposons...</h2>
@@ -48,5 +42,3 @@
         </div>
       </div>
     </section>
-  </body>
-</html>

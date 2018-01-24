@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Section4</title>
-  </head>
-  <body>
+
     <section id="contact">
       <form class="formulaire">
         <div class="ligne1">
@@ -21,5 +15,3 @@
         </div>
       </form>
     </section>
-  </body>
-</html>

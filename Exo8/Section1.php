@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Section1</title>
-  </head>
-  <body>
+
     <section id="Home">
       <article class="article1">
         <h1 class="titre1">
@@ -19,5 +13,3 @@
         <a href="#Product" class="bouton">Nos produits</a>
       </article>
     </section>
-  </body>
-</html>

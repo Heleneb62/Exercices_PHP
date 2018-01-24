@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Section3</title>
-  </head>
-  <body>
+
     <section id="store">
       <article class="article2">
         <h2 class="titreh2">Notre boutique...</h2>
@@ -26,5 +20,3 @@
         </div>
       </article>
     </section>
-  </body>
-</html>
